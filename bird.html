@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bird</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="x-icon"  href="logo1.png">
+    <script src="https://kit.fontawesome.com/1165876da6.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+
+    <div id="header-placeholder"></div>
+    
+
+    <h1 style="padding-top: 40px;">Bird Search Page</h1>
+
+    <div class="form">
+        <input type="text" name="" id="search-input" placeholder="Search">
+        <button id="search-button" onclick="fetchData()">Search</button>
+
+    </div>
+
+
+
+    <div class="search-results">
+        <div class="search-result" id="animal-details">
+            <img src="https://images.pexels.com/photos/14084430/pexels-photo-14084430.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                alt="Golden Retriever">
+            <a href="">Golden retriever </a>
+        </div>
+
+    </div>
+
+    
+        
+            <div class="animal-details" id="animal-details">
+                <button type="button" class="btn details-close-btn" id="details-close-btn" onclick="closeDetails()">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="animal-details-content" id="animal-details-content">
+                    <h2 class="details-title">Animal Name</h2>
+                
+                    <div class="details">
+                        <p class="title-details"><b>Family: </b></p>
+                        <p id="family" ></p>
+                    </div>
+                    
+                    <div class="details">
+                        <p class="title-details"><b>Species: </b></p>
+                        <p id="species" ></p>
+                    </div>
+        
+                    <div class="details">
+                        <p class="title-details"><b>Weight KG: </b></p>
+                        <p id="weight" ></p>
+                    </div>
+        
+                    <div class="details">
+                        <p class="title-details"><b>Wingspan cm: </b></p>
+                        <p id="wingspan" ></p>
+                    </div>
+                        
+                    <div class="details">
+                        <p class="title-details"><b>Habitat</b>:</h2>
+                        <p id="habitat" ></p>
+                    </div>
+                        
+                    <div class="details">
+                        <p class="title-details"><b>Place of found: </b></p>
+                        <p id="place-of-found"  ></p>
+                    </div>
+                    
+                    <div class="details-instruct">
+                        <h3>Description:</h3>
+                        <p id="details-description">Description here</p>
+                    </div>
+
+                    <div class="details-animal-img">
+                        <img src="" alt="Animal Image" id="details-image">
+                    </div>
+                </div>
+
+        </div>
+
+
+        
+
+        </div>
+
+        <div id="footer-placeholder"></div>
+        <script src="birdJavascript.js"></script>
+        <script src="headerFooterMenager.js"></script>
+
+
+</body>
+
+</html>

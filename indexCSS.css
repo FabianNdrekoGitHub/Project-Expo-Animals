@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+
+}
+body{
+    line-height: 1.6;
+}
+#first-photo{
+    width: 100%;
+    height: 550px;
+    border-image:fill 0 linear-gradient(rgba(82, 81, 81, 0.067), #262626);
+    background-image: url('wallpaperHome.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-top: 10% ;
+    
+    
+}
+.first-photo-items{
+    position: flex;
+    max-width: 70%;
+    color: rgb(255, 255, 255);
+    margin: auto; 
+}
+
+
+/* fillon me shkrimin posht eshte mbyllur stilizimi i fotos edhe shkrimit te fotos */
+
+#first-h2{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 40px;
+    color: rgb(11, 65, 47);
+}
+
+
+
+.animals-details{
+    
+    max-width: 75%;
+    height: auto;
+    margin: auto;
+    padding-bottom: 100px;
+
+}
+
+.animals-details-items{
+    display: flex;
+    padding-top: 50px ;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.column{
+    width: 50%;
+    align-items: center;
+}
+
+.column img {
+    display: flex;
+    width: 80%;
+}
+
+.column button{
+    background-color: #36A9AE;
+  background-image: linear-gradient(#37ADB2, #329CA0);
+  border: 1px solid #2A8387;
+  border-radius: 4px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 1px;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: block;
+  font-family: -apple-system,".SFNSDisplay-Regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 17px;
+  line-height: 100%;
+  margin: 0;
+  outline: 0;
+  padding: 11px 15px 12px;
+  text-align: center;
+  transition: box-shadow .05s ease-in-out,opacity .05s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 30%;
+}
+
+
+.column button:hover {
+  box-shadow: rgba(255, 255, 255, 0.3) 0 0 2px inset, rgba(0, 0, 0, 0.4) 0 1px 2px;
+  text-decoration: none;
+  transition-duration: .15s, .15s;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppin", sans-serif;
+}
+
+body{
+    line-height: 1.6;
+
+}
+h1{
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin: 4px 0 60px 0;
+    color: black;
+}
+
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+#search-input{
+    width: 60%;
+    max-width: 400px;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 0 0 6px rgb(0, 0, 0, 0.2);
+    border-radius: 5px;
+    font-size: 18px;
+    color: #333;
+
+}
+
+#search-button{
+    padding: 10px 20px;
+    background-color: #138065;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    box-shadow: 0 0 6px rgb(0, 0, 0, 0.2);
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.search-results{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.search-result{
+    margin-bottom: 60px;
+    width: 30%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgb(0, 0, 0, 0.2);
+    overflow: hidden;
+
+}
+
+.search-result img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: opacty 0.2s ease-in-out;
+}
+
+.search-result:hover img{
+    opacity: 0.8;
+}
+
+.search-result a{
+    font-size: 20px;
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+#show-more-button{
+    background-color: #008cba;
+    font-size: 18px;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    display: block;
+    margin: 30px auto;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+/* ================== */
+
+
+
+
+
+
+
+
+
+:root{
+    --teene-tawny: #d65108;
+    --teene-tawny-dark: #b54507;
+}
+
+.details {
+    display: flex;
+    align-items: center; /* Qendra përmbajtjen vertikalisht */
+    text-align: left; /* Teksti është i rreshtuar në të majtë */
+}
+
+
+
+
+.title-details{
+    font-size: 18px;
+}
+
+.animal-details{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    background: var(--teene-tawny);
+    border-radius: 1rem;
+    width: 90%;
+    height: 90%;
+    overflow-y: scroll;
+    display: none;
+    padding: 2rem 0;
+}
+ .animal-details::-webkit-scrollbar{
+    width: 10px;
+}
+ .animal-details::-webkit-scrollbar-thumb{
+    background: #f0f0f0;
+    border-radius: 2rem;
+}
+
+.showDetails{
+    display: block;
+}
+.animal-details-content{
+    margin: 2rem;
+}
+.animal-details-content p:not(.details-category){
+    padding: 1rem 0;
+}
+.details-close-btn{
+    position: absolute;
+    right: 2rem;
+    top: 2rem;
+    font-size: 1.8rem;
+    background: #943c3c;
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.6;
+}
+
+.details-animal-img img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+
+.notFound{
+    grid-template-columns: 1fr!important;
+    color: var(--teene-tawny);
+    font-size: 1.8rem;
+    font-weight: 600;
+    width: 100%;
+}
+@media screen and (min-width: 768px) {
+    .animal-details{
+    width: 500px;
+    height: 500px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========================= */
+
+
+@media screen and (max-width: 768px){
+    .search-result{
+        padding: 20px;
+
+    }
+    .search-result{
+        width: 45%;
+
+    }
+}
+
+@media screen and (max-width: 500px){
+    .search-result{
+        width: 100%;
+        
+    }
+}
