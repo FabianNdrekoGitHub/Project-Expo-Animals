@@ -52,6 +52,14 @@ body{
 
     padding-bottom: 70px;
 }
+@media screen and (max-width: 805px) {
+    .containerAbout{
+        display: grid;
+    }
+    .aboutUs{
+        width: 95%;
+    }
+}
 
 .thumbex{
     width: 250px;

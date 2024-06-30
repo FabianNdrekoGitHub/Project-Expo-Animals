@@ -38,7 +38,9 @@ body{
     color: rgb(11, 65, 47);
 }
 
-
+.headText{
+    font-size: 2rem;
+}
 
 .animals-details{
     
@@ -56,6 +58,46 @@ body{
     justify-content: space-around;
 
 }
+@media screen and (max-width: 430px){
+    .header-placeholder{
+        width: 100%;
+    }
+    .first-photo{
+        width: 100%;
+    }
+    .first-photo-items {
+        
+        max-width: 95% ;
+    }
+    .headPharagraph{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 993px) {
+    
+    .first-photo-items{
+        width: 100%;
+    }
+    .animals-details-items{
+        display: block;
+        
+    }
+    .column{
+        display: grid;
+        width: 100%;
+        align-items: center;
+        margin-bottom: 40px;
+        
+    }
+    
+    .column img{
+        width: 20rem !important ;
+        
+    }
+}
+
+
 
 .column{
     width: 50%;
@@ -64,6 +106,12 @@ body{
 
 .column img {
     display: flex;
+    width: 80%;
+    
+}
+.cat{
+    float: right;
+    /* display: flex; */
     width: 80%;
 }
 
